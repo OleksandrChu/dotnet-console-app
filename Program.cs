@@ -6,7 +6,10 @@ namespace hello_world
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            String message = BuildMessage("world");
+            Console.WriteLine(message);
         }
+
+        static String BuildMessage(String name) => String.Format("Hello {0}!", name);
     }
 }
